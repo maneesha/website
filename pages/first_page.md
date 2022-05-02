@@ -2,7 +2,7 @@
 title:  Using vscode 
 layout: page
 description:  Using vscode
-post-image: "https://raw.githubusercontent.com/thedevslot/WhatATheme/master/assets/images/What%20is%20Jekyll%20and%20How%20to%20use%20it.png?token=AHMQUELVG36IDSA4SZEZ5P26Z64IW"
+post-image: "/assets/images/vscode.jpeg"
 real_page: "display" 
 excerpt: My hints on using vscode.
 ---
