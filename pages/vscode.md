@@ -2,7 +2,7 @@
 title:  Using vscode 
 layout: page
 description:  Using vscode
-post-image: "/assets/images/vscode.jpeg"
+post-image: "vscode.jpeg"
 real_page: "display" 
 excerpt: My hints on using vscode.
 ---
