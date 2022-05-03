@@ -2,7 +2,7 @@
 title:  Git and GitHub
 layout: page
 description: All about Git/GitHub
-post-image: "/assets/images/github.jpeg"
+post-image: "github.jpeg"
 real_page: "display" 
 excerpt: This page has all my git hints.
 ---

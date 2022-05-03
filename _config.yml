@@ -6,6 +6,9 @@ url: ''
 # Base URL of the Site (i.e., Name of the Repository in which the Site is hosted)
 baseurl: 
 
+# Base URL for images
+img_url: https://maneesha.github.io/website/assets/images
+
 # Title of the Site
 title: All the things
 # Description of the Site

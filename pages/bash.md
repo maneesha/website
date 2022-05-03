@@ -2,7 +2,7 @@
 title:  Using bash
 layout: page
 description:  Using bash
-post-image: "/assets/images/bash.jpeg"
+post-image: "bash.jpeg"
 real_page: "display" 
 excerpt: My hints on using bash.
 ---
