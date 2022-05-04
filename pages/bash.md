@@ -5,6 +5,7 @@ description:  Using bash
 post-image: "bash.jpeg"
 real_page: "display" 
 excerpt: My hints on using bash.
+permalink: bash
 ---
 
 # Useful hints for using bash
