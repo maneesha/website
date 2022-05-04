@@ -41,16 +41,16 @@ spotify_username:
 google-analytics: UA-163806439-1
 
 # Disqus
-disqus-shortname: thedevslot
+disqus-shortname: 
 
 # Name of the Author
-author-name: TheDevsLot
+author-name: Maneesha Sane
 # URL for the Image of the Author
 author-image: https://maneesha.github.io/website/assets/images/laptop_me.png
 # 60 Words About the Author
 author-about: This is me.  This is where I keep all my stuff.  It's mainly here for myself, but if you've stumbled upon this page, welcome! 
 # URL to the Author's Profile (i.e., Github, Twitter, Stackoverflow, etc)
-author-url: https://github.com/thedevslot
+author-url: https://github.com/maneesha
 
 # SASS
 sass:
