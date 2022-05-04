@@ -5,6 +5,7 @@ description:  Using vscode
 post-image: "vscode.jpeg"
 real_page: "display" 
 excerpt: My hints on using vscode.
+permalink: vscode
 ---
 
 # This page is in the pages dir
