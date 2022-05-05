@@ -5,7 +5,7 @@ description: All about Git/GitHub
 post-image: "github.jpeg"
 real_page: "display" 
 excerpt: This page has all my git hints.
-permalink: git
+permalink: /git/
 ---
 
 # This page is another page is in the pages dir
