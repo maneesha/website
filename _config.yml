@@ -21,7 +21,8 @@ site-keywords: Site, Template, Theme
 favicon-url: 
 
 # URL of the Image of Custom Hero Image (i.e., the image in the background of the very first section of the Homepage)
-heroimage: https://images.pexels.com/photos/220444/pexels-photo-220444.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940
+heroimage: /assets/images/fog.jpeg
+
 
 # Social Media and Contact
 # If you don't want to use any icon, you can leave them blank.
@@ -51,6 +52,8 @@ author-image: https://maneesha.github.io/website/assets/images/laptop_me.png
 author-about: This is me.  This is where I keep all my stuff.  It's mainly here for myself, but if you've stumbled upon this page, welcome! 
 # URL to the Author's Profile (i.e., Github, Twitter, Stackoverflow, etc)
 author-url: https://github.com/maneesha
+
+include: [.htaccess]
 
 # SASS
 sass:
