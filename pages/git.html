@@ -11,6 +11,8 @@ permalink: /git/
 
 
 <h3>Git Topics</h3>
+Because I'm always forgetting certain commands in Git and GitHub, I made myself a list of the commands I keep having to look up.<hr>
+
 <button type="button" class="collapsible">Git Log Commands</button>
 <div class="coll-content">
 
@@ -25,7 +27,7 @@ permalink: /git/
 <hr>
 
 
-<p>Show the file diff in the log.  It's like getting  <code>git log </code> and  <code>git diff </code> all at once.</p>
+<p>Show the file diff in the log.  It's like getting  <code>git log</code> and  <code>git diff</code> all at once.</p>
 <code>git log -p</code>
 <hr>
 
@@ -42,7 +44,7 @@ permalink: /git/
 <hr>
 
 
-<p>Show all commits where that term was changed in a file..</p>
+<p>Show all commits where that term was changed in a file itself.  Use the <code>-S</code> flag for text search; <code>-G</code> for regex search</p>
 
 <pre>
 git log -S"heisenberg" 
@@ -52,26 +54,7 @@ git log -G"\bh[a-z]*rg\b"
 
 <hr>
 
-
-
 </div>
-
-
-git log -S"heisenberg"
-
-# OR 
-
-git log -G"\bh[a-z]*rg\b"
-
-
-
-
-
-
-
-
-
-
 
 <button type="button" class="collapsible">More Git Commands</button>
 <div class="coll-content">
