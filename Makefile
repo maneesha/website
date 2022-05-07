@@ -17,3 +17,7 @@ build:
 	bundle exec jekyll build  --incremental
 
 
+## deploy: build site and copy to deployment server
+deploy:
+	bundle exec jekyll build --incremental
+	./bin/deploy_site.sh
