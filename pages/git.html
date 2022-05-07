@@ -1,0 +1,83 @@
+---
+title:  Git and GitHub
+layout: page
+description: All about Git/GitHub
+post-image: "github.jpeg"
+real_page: "display" 
+excerpt: This page has all my git hints.
+permalink: /git/
+---
+
+
+
+<h3>Git Topics</h3>
+<button type="button" class="collapsible">Git Log Commands</button>
+<div class="coll-content">
+
+<hr>
+
+<p>This gives a summary of git log:</p>
+<code>git log --oneline</code>
+<hr>
+
+<p>Like <code>git log </code> but also shows the files that were changed in each commit.</p>
+<code>git log --name-status</code>
+<hr>
+
+
+<p>Show the file diff in the log.  It's like getting  <code>git log </code> and  <code>git diff </code> all at once.</p>
+<code>git log -p</code>
+<hr>
+
+<p>Show all commits for a specific file.</p>
+<code>git log -p -- _config.yml</code>
+<hr>
+
+<p>Show all commits in a date range.</p>
+<code>git log --after="2019-07-01" --before="2019-09-30"</code>
+<hr>
+
+<p>Show all commit where messages contain a term.</p>
+<pre>git log --grep="mesa verde"</pre>
+<hr>
+
+
+<p>Show all commits where that term was changed in a file..</p>
+
+<pre>
+git log -S"heisenberg" 
+# OR 
+git log -G"\bh[a-z]*rg\b"
+</pre>
+
+<hr>
+
+
+
+</div>
+
+
+git log -S"heisenberg"
+
+# OR 
+
+git log -G"\bh[a-z]*rg\b"
+
+
+
+
+
+
+
+
+
+
+
+<button type="button" class="collapsible">More Git Commands</button>
+<div class="coll-content">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+<button type="button" class="collapsible">Open Section 3</button>
+<div class="coll-content">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
