@@ -10,7 +10,7 @@ layout: compress
     {% include navbar.html %}
     <section class="hero is-fullheight">
         <div class="hero-body">
-            <div class="container has-text-centered" id="page-section">
+            <div class="container" id="page-section">
                 <div class="section">
                     <h1 class="title is-1 is-uppercase has-text-weight-bold">
                         {{page.title}}
@@ -23,8 +23,29 @@ layout: compress
             </div>
         </div>
     </section>
+
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+        
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+              content.style.display = "none";
+            } else {
+              content.style.display = "block";
+            }
+          });
+        }
+        </script>
+
+
     <!--Footer begins here-->
     {% include footer.html %}
 </body>
+
+
 
 </html>
