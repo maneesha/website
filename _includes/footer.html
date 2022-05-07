@@ -27,11 +27,14 @@
 
             <!--Link Section-->
             <div class="column has-text-white">
-                <h3>Placeholder Links</h3>
+                <h3>Find Me</h3>
 
-                <a href = "https://google.com">Google</a>
-                <a href = "https://darksky.net">Weather</a>
-                <a href = "https://github.com">GitHub</a>
+                <a href="https://www.twitter.com/{{site.github_username}}"target="_blank">
+                <i class="fab fa-github"></i> GitHub</a> 
+
+                <a href="https://www.twitter.com/{{site.twitter_username}}"target="_blank">
+                <i class="fab fa-twitter"></i> Twitter</a>
+
 
 
                 <!-- {% for sitepage in site.html_pages offset: 4 %}
@@ -48,7 +51,7 @@
 
             <!--Blog-post Section-->
             <div class="column has-text-white">
-                <h3>Recent Posts</h3>
+                <h3>Blog posts that came with the template</h3>
                 {% for post in site.posts offset: 0 limit:3 %}
                 <li>
                     <a href="{{post.url | absolute_url}}">{{post.title}}</a>
