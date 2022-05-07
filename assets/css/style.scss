@@ -380,10 +380,11 @@ a.navbar-item.is-active {
       .coll-content {
         padding: 0 18px;
         display: none;
+        &.show {
+            display: block;
+          } 
         overflow: hidden;
         background-color: #e1e1e1;
       }
-
-
 
 }
