@@ -11,6 +11,7 @@ serve:
 ## clean: remove existing site build
 clean: 
 	rm -rf _site 
+	find . -name .DS_Store -exec rm {} \;
 
 ## build: build site for deployment to server
 build:
