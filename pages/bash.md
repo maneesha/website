@@ -8,30 +8,34 @@ excerpt: My hints on using bash.
 permalink: /bash/
 ---
 
-# Useful hints for using bash
 
-This is a list of all the bash commands I always forget.
+<h3>Bash Topics</h3>
+Because I'm always forgetting certain commands in bash, I made myself a list of the commands I keep having to look up.<hr>
 
-## This is heading 2
-### This is heading 3
-#### This is heading 4
-##### This is heading 5
-###### This is heading 6
+<button type="button" class="collapsible">Keyboard navigation</button>
+<div class="coll-content">
 
-[This is a link](#)
+<hr>
 
-> This is a blockquote
 
-`This is code`
+<ul>
+<li>ctrl-A Goes to start of line</li>
+<li>ctrl-E Goes to end of line</li>
+<li>alt-F Goes forward 1 word</li>
+<li>alt-B Goes back 1 word</li>
+<li>ctrl-U Deletes from cursor to start of line</li>
+<li>ctrl-K Deletes from cursor to end of line</li>
+<li>alt-D Deletes from cursor to end of word</li>
+<li>ctrl-XX Toggle between current cursor position and start of line</li>
+</ul>
 
-### Bullet List
-* Item 1
-* Item 2
-* Item 3
-* Item 4
 
-### Number List
-1. Item 1
-2. Item 2
-3. Item 3
-4. Item 4
+<p>This gives a summary of git log:</p>
+<code>git log --oneline</code>
+<hr>
+
+<p>Like <code>git log</code> but also shows the files that were changed in each commit.</p>
+<code>git log --name-status</code>
+<hr>
+
+</div>
