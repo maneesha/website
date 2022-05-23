@@ -17,8 +17,23 @@ Because I'm always forgetting certain commands in Python and Pandas, I made myse
 
 <hr>
 
-<p>How to use lambda functions with Pandas dataframes.</p>
+<p><b>How to use lambda functions with Pandas dataframes.</b></p>
 
+<p>The apply function can be used to manipulate values in a dataframe or specified columns based on a custom function. We can write a simple function like:</p>
+
+<pre>
+def adjust_score(num):
+    return num * 1.15
+</pre>
+
+<p>We can then apply it to the score column in our dataframe. For each value in <code>df['score']</code> it multiplies it by 1.15. It returns the new values but does not change the column.</p>
+
+
+<pre>df['score'].apply(lambda x: adjust_score(x))</pre>
+
+<p>This can then be used to create a new column in the dataframe.</p>
+
+<pre>df['adjusted_score'] = df['score'].apply(lambda x: adjust_score(x))</pre>
 
 <hr>
 
