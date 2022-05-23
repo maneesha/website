@@ -38,3 +38,19 @@ def adjust_score(num):
 <hr>
 
 </div>
+
+<button type="button" class="collapsible">Working with dates</button>
+<div class="coll-content">
+
+<hr>
+
+<p><b>PeriodIndex</b></p>
+
+<p>Pandas has a <code>PeriodIndex</code> feature which will let you get dates by quarters. Read more in <a href="https://stackoverflow.com/questions/37632766/python-pandas-get-fiscal-quarter-from-fiscal-year-and-month-for-uk">this Stack Overview post</a>.</p>
+
+<pre>
+all_events['quarter'] = pd.PeriodIndex(all_events['start_date'], freq='Q-DEC').strftime('%YQ%q')
+</pre>
+
+<hr>
+</div>
