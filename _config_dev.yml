@@ -9,6 +9,8 @@ url: 		'http://localhost:4000'
 baseurl: 	''
 filesurl:       'http://localhost:4000/files'
 urlimg: 	'http://localhost:4000/images'
+img_url: 'http://localhost:4000/assets/images'
+
 
 # # See › https://github.com/jekyll/jekyll-gist#disabling-noscript-support
 # gist:
