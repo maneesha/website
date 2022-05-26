@@ -12,6 +12,8 @@ permalink: /python-pandas/
 <h3>Python and Pandas</h3>
 Because I'm always forgetting certain commands in Python and Pandas, I made myself a list of the commands I keep having to look up.<hr>
 
+
+<!-- LAMBDA FUNCTIONS  -->
 <button type="button" class="collapsible">Using Lambda functions</button>
 <div class="coll-content">
 
@@ -39,6 +41,7 @@ def adjust_score(num):
 
 </div>
 
+<!-- WORKING WITH DATES -->
 <button type="button" class="collapsible">Working with dates</button>
 <div class="coll-content">
 
@@ -50,6 +53,113 @@ def adjust_score(num):
 
 <pre>
 all_events['quarter'] = pd.PeriodIndex(all_events['start_date'], freq='Q-DEC').strftime('%YQ%q')
+</pre>
+
+<hr>
+
+<p><b>Converting strings to dates</b></p>
+If your values look mostly like dates, pandas will figure out the rest. 
+<pre>
+all_events['start_date'] = pd.to_datetime(all_events['start_date'])
+</pre>
+<hr>
+</div>
+
+<button type="button" class="collapsible">Converting data types</button>
+<div class="coll-content">
+
+<hr>
+
+<!-- DATA TYPES -->
+
+<p><b>Data Types</b></p>
+
+<p>Pandas coerces strictly coerces data types in columns.  If a column contains strings and numbers, all values are considered strings. <code>NaN</code> values are considered floats, so a column with integers and null values will get coerced to be floats.</p>
+
+<p><b>Converting floats to integers</b></p>
+<pre>
+df['score] = df['score].astype('int')
+</pre>
+
+
+<hr>
+</div>
+
+<!-- GROUPING/AGGREGATING -->
+<button type="button" class="collapsible">Grouping and Aggregating</button>
+<div class="coll-content">
+
+<hr>
+
+<p><b>Grouping</b></p>
+
+<p>Description</p>
+
+<pre>
+# Code sample
+</pre>
+
+<hr>
+</div>
+
+
+<!-- DATAFRAME ORGANIZATION -->
+<button type="button" class="collapsible">Grouping and Aggregating</button>
+<div class="coll-content">
+
+<hr>
+
+<p><b>Misc tasks to help organize your dataframe.</b></p>
+
+<p>Renaming columns - two methods</p>
+
+<pre>
+
+# Pass in a dictionary to rename with old names as keys and new names as values.  
+df.rename(columns={'count':'Total Attendance'})
+
+# Set df.columns to be a list. The list must include all column names (even those that are not being renamed) in the correct order.
+df.columns = ['id', 'first_name', 'last_name', 'test_score']
+
+</pre>
+
+<hr>
+</div>
+
+
+<!-- SLICING AND DICING -->
+<button type="button" class="collapsible">Slicing and dicing</button>
+<div class="coll-content">
+
+<hr>
+
+<p><b>Get all columns for a range of rows </b></p>
+
+<p>Specific rows can be accessed using <code>loc</code> or <code>iloc</code>.</p>
+
+<ul>
+    <li><code>.iloc</code> selects rows based on an integer index, so only takes integers</li>
+    <li><code>.loc</code> selects rows based on a labeled index, so can take strings or integers</li>
+</ul>
+
+<pre>
+# select rows based on integer index
+df.iloc[2:5]
+df.iloc[[4, 6, 8]]
+
+# select rows based on label index 
+df.loc[['a', 'b', 'c']]
+# select row with index 'peach' up to row with index 'lemon'
+df.loc['peach':'lemon']
+</pre>
+
+<p>Get a specific cell from a dataframe</p>
+
+<pre>
+# Add the column name to the retrieved row.
+df.iloc[3]['qty'] 
+# OR 
+df.loc['peach']['qty']
 </pre>
 
 <hr>
