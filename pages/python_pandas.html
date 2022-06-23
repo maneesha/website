@@ -37,6 +37,15 @@ def adjust_score(num):
 
 <pre>df['adjusted_score'] = df['score'].apply(lambda x: adjust_score(x))</pre>
 
+<p>This can also work if you want to access different columns in the data 
+    frame as different arguments for your lambda function.  See this 
+    <a href="https://stackoverflow.com/questions/13331698/how-to-apply-a-function-to-two-columns-of-pandas-dataframe">
+        Stack Overflow post.
+    </a>
+</p>
+
+<pre>df['col_3'] = df.apply(lambda x: get_sublist(x.col_1, x.col_2), axis=1)</pre>
+
 <hr>
 
 </div>
