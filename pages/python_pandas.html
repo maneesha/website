@@ -100,12 +100,15 @@ df['score] = df['score].astype('int')
 
 <hr>
 
-<p><b>Grouping</b></p>
+<p><b>Grouping and Aggregating</b></p>
 
-<p>Description</p>
+<p>This code will create a row for each permutation of `id` and `product` and
+    include a column for the sum of `quantity`, with that column named `foo`.
+</p>
+
 
 <pre>
-# Code sample
+    df = df.groupby(['id','product'])['quantity'].sum().reset_index("foo")
 </pre>
 
 <hr>
@@ -113,7 +116,7 @@ df['score] = df['score].astype('int')
 
 
 <!-- DATAFRAME ORGANIZATION -->
-<button type="button" class="collapsible">Grouping and Aggregating</button>
+<button type="button" class="collapsible">Misccellaneous Tasks</button>
 <div class="coll-content">
 
 <hr>
