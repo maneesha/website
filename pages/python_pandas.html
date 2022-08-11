@@ -220,5 +220,18 @@ df.columns = ['id', 'first_name', 'last_name', 'test_score']
 
 </pre>
 
+<p>Selecting unique rows between dataframes</p>
+
+<pre>
+
+# This gives you what's in df1 but not df2.
+# If you have two dataframes with the same columns, you can find the rows that are unique (not duplicated) between the two dataframes. 
+# From this Stack Overflow post, it looks for what's in the lunch column of df1, 
+# checks to see if it's in the lunch column of df2, then takes the inverse of that (noted by the ~).
+
+df1[~df1.['lunch']].isin(df2['lunch'])
+
+</pre>
+
 <hr>
 </div>
