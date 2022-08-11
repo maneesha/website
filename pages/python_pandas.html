@@ -199,6 +199,30 @@ df[df['lunch'].str.contains('pizza')]
 
 
 
+<!-- SETTING COLUMN VALUES -->
+<button type="button" class="collapsible">Setting column values</button>
+<div class="coll-content">
+
+<hr>
+
+<p><b>Setting one column value based on another</b></p>
+
+<p>Using the code shared above to filter values of one column, we can then re-assign values of an existing column or 
+create a new column with the given value. See this Stack Overflow post. In this example, the code looks for all values 
+of start_date between `2018-01-01` and `2018-03-31`. It then puts the value `2018Q1` in the `quarter` column for all matching rows.
+If the `quarter` column does not already exist, it creates it. If it does exist, it overwrites the values in that quarter.</p>
+
+<pre>
+
+all_workshops.loc[((all_workshops['start_date'] >= "2018-01-01") &  (all_workshops['start_date'] <= "2018-03-31")), 'quarter'] = "2018Q1"
+
+</pre>
+
+]
+
+<hr>
+</div>
+
 
 <!-- DATAFRAME ORGANIZATION -->
 <button type="button" class="collapsible">Misccellaneous Tasks</button>
