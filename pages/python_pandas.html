@@ -224,6 +224,64 @@ all_workshops.loc[((all_workshops['start_date'] >= "2018-01-01") &  (all_worksho
 </div>
 
 
+
+
+<!-- MERGING DATA FRAMES -->
+<button type="button" class="collapsible">Merging dataframes</button>
+<div class="coll-content">
+
+<hr>
+
+<p><b>Merging dataframes</b></p>
+
+<p>
+
+<p>If you have two dataframes:</p>
+
+    <ul>
+        <li>all_students with fields including id, first_name, last_name and so on</li>
+        <li>student_awards with fields including award_id, student_id, award_type, award_date and so on</li>
+    </ul>
+
+    These dataframes can be merged as follows:
+
+
+</p>
+
+<pre>
+student_progress = pd.merge(left=all_students, 
+                            right=student_awards, 
+                            how="left", 
+                            left_on="id", 
+                            right_on="student_id",
+                            )
+</pre>
+
+<p>This is similar to the following SQL statement:</p>
+
+
+<pre>
+SELECT * 
+FROM all_students st JOIN student_awards aw
+ON st.id = aw.student_id;
+</pre>
+<hr>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <!-- DATAFRAME ORGANIZATION -->
 <button type="button" class="collapsible">Misccellaneous Tasks</button>
 <div class="coll-content">
