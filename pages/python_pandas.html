@@ -115,28 +115,6 @@ df['score] = df['score].astype('int')
 </div>
 
 
-<!-- DATAFRAME ORGANIZATION -->
-<button type="button" class="collapsible">Misccellaneous Tasks</button>
-<div class="coll-content">
-
-<hr>
-
-<p><b>Misc tasks to help organize your dataframe.</b></p>
-
-<p>Renaming columns - two methods</p>
-
-<pre>
-
-# Pass in a dictionary to rename with old names as keys and new names as values.  
-df.rename(columns={'count':'Total Attendance'})
-
-# Set df.columns to be a list. The list must include all column names (even those that are not being renamed) in the correct order.
-df.columns = ['id', 'first_name', 'last_name', 'test_score']
-
-</pre>
-
-<hr>
-</div>
 
 
 <!-- SLICING AND DICING -->
@@ -172,6 +150,30 @@ df.loc['peach':'lemon']
 df.iloc[3]['qty'] 
 # OR 
 df.loc['peach']['qty']
+</pre>
+
+<hr>
+</div>
+
+
+<!-- DATAFRAME ORGANIZATION -->
+<button type="button" class="collapsible">Misccellaneous Tasks</button>
+<div class="coll-content">
+
+<hr>
+
+<p><b>Misc tasks to help organize your dataframe.</b></p>
+
+<p>Renaming columns - two methods</p>
+
+<pre>
+
+# Pass in a dictionary to rename with old names as keys and new names as values.  
+df.rename(columns={'count':'Total Attendance'})
+
+# Set df.columns to be a list. The list must include all column names (even those that are not being renamed) in the correct order.
+df.columns = ['id', 'first_name', 'last_name', 'test_score']
+
 </pre>
 
 <hr>
