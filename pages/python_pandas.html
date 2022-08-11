@@ -156,6 +156,41 @@ df.loc['peach']['qty']
 </div>
 
 
+<!-- FILTERING DATAFRAMES -->
+<button type="button" class="collapsible">Filtering Dataframes</button>
+<div class="coll-content">
+
+<hr>
+
+<p><b>Filtering dataframes</b></p>
+
+<p>Filtering by one column</p>
+
+<pre>
+
+# This will return all rows where math_score is greater than 75.    
+df.loc[(df['math_score'] > 75)]
+
+</pre>
+
+<p>Filtering by multiple columns</p>
+
+<pre>
+
+# This will return all rows where math_score is greater than 75 and reading_score is greater than 80.
+# Note the parentheses around each expression.
+df.loc[(df['math_score'] > 75) & (df['reading_score'] > 80)]
+
+
+</pre>
+
+
+<hr>
+</div>
+
+
+
+
 <!-- DATAFRAME ORGANIZATION -->
 <button type="button" class="collapsible">Misccellaneous Tasks</button>
 <div class="coll-content">
