@@ -184,6 +184,15 @@ df.loc[(df['math_score'] > 75) & (df['reading_score'] > 80)]
 
 </pre>
 
+<p>Filtering by strings</p>
+
+<pre>
+
+# This will return all rows where the column lunch contains the string pizza
+df[df['lunch'].str.contains('pizza')]
+
+
+</pre>
 
 <hr>
 </div>
