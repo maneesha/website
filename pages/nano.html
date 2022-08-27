@@ -37,3 +37,17 @@ permalink: /nano/
     </ul>
     <hr>
 </div>
+
+<button type="button" class="collapsible">Look and feel</button>
+<div class="coll-content">
+    <hr>
+    <p>By default, nano is presented in monochome. The look and feel can be customized by adding the following lines to your <code>~/.nanorc</code> file.  The colors can be whatever you want.  When specifying more than one color, do not incude a space with the comma. View more options in the <a href="https://www.nano-editor.org/dist/latest/nano.html#Nanorc-Files">nano documetation</a>.</p>
+    <ul>
+        <li><code>set softwrap</code> Keeps softwrap always on, so you don't have to <code>Escape-$</code> </li>
+        <li><code>set numbercolor yellow</code> Sets the color of the line numbers</li>
+        <li><code>set titlecolor white,red</code> Sets the color of the file titlebar as foreground,background</li>
+        <li><code>set functioncolor cyan</code> and <code>set keycolor green</code> Sets the color of the keystrokes and functions displayed at the bottom of the screen</li>
+        <li><code>include /usr/local/share/nano/*.nanorc</code> Tells nano to include language-specific syntax highlighting, as defined for all the major languages in that folder.</li>
+    </ul>
+    <hr>
+</div>
